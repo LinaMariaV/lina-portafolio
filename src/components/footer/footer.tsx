@@ -57,7 +57,7 @@ export default  function Footer (){
           <div className="w-px h-24 bg-orange-50"></div>
         </div>
 
-        <div className="flex-grow"></div>
+        <div className="grow"></div>
 
         <div className="absolute right-5 bottom-5 flex flex-col items-center">
           <div className="w-8 "></div>

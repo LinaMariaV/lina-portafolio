@@ -51,7 +51,7 @@ export default function Home() {
 
       <Skills />
 
-      <section className="w-full max-w-6xl px-4 py-12">
+      <div className="w-full max-w-6xl px-16 py-20 ">
         <h2 className="text-3xl font-semibold text-white mb-8 text-center">
           Mis Habilidades y Enfoque
         </h2>
@@ -92,7 +92,7 @@ export default function Home() {
           con los requisitos, sino que también se alinee con los objetivos
           estratégicos de negocio.
         </p>
-      </section>
+      </div>
 
       <Projects />
 
