@@ -1,4 +1,4 @@
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGithub, FaDatabase } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaHtml5, FaGithub, FaDatabase } from 'react-icons/fa';
 import { motion } from 'framer-motion'; // Animaciones
 
 export default function Skills() {

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaReact, FaVuejs, FaNodeJs } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import SvelteLogo from "./SvelteLogo";
-import { i } from "framer-motion/client";
+
 
 const Icons: React.FC = () => {
   const radius = 100;
