@@ -13,7 +13,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   technologies,
   isExternalLink,
 }) => (
-  <div className="bg-slate-950 border-2  border-indigo-500 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+  <div className="bg-slate-950 border-2  text-indigo-500 border-indigo-500 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
     
       <div className="w-8 h-8">
         <svg
