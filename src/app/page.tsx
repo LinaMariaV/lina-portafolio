@@ -51,49 +51,6 @@ export default function Home() {
 
       <Skills />
 
-      <div className="w-full max-w-6xl px-16 py-20 ">
-        <h2 className="text-3xl font-semibold text-white mb-8 text-center">
-          Mis Habilidades y Enfoque
-        </h2>
-
-        <p className="text-lg text-gray-300 leading-relaxed">
-          Como desarrolladora web, me especializo en crear aplicaciones web de
-          alto rendimiento utilizando tecnologías como <strong>React</strong> y{" "}
-          <strong>Next.js</strong>, que permiten construir interfaces
-          interactivas, escalables y altamente eficientes. Mi enfoque está en
-          proporcionar soluciones que optimicen la experiencia del usuario,
-          garantizando aplicaciones rápidas, accesibles y funcionales.
-        </p>
-
-        <p className="text-lg text-gray-300 leading-relaxed mt-4">
-          Tengo una sólida experiencia en <strong>Node.js</strong>, lo que me
-          permite desarrollar backends robustos y eficientes, creando
-          arquitecturas bien estructuradas y fáciles de mantener. Mi objetivo es
-          siempre construir aplicaciones con código limpio, modular y escalable,
-          asegurando su rendimiento incluso a medida que crecen.
-        </p>
-
-        <p className="text-lg text-gray-300 leading-relaxed mt-4">
-          He trabajado con bases de datos tanto relacionales como no
-          relacionales, incluyendo <strong>SQL</strong> y{" "}
-          <strong>MongoDB</strong>, optimizando el almacenamiento y la
-          manipulación de datos para que las aplicaciones sean rápidas y
-          seguras. Además, domino herramientas como <strong>Git</strong> para el
-          control de versiones, asegurando que los proyectos sean escalables,
-          colaborativos y estén siempre alineados con las mejores prácticas de
-          desarrollo.
-        </p>
-
-        <p className="text-lg text-gray-300 leading-relaxed mt-4">
-          Mi enfoque se basa en resultados tangibles y soluciones bien
-          implementadas. Trabajo de manera ágil, adaptándome rápidamente a
-          nuevos desafíos y colaborando estrechamente con equipos
-          multidisciplinarios para garantizar que cada proyecto no solo cumpla
-          con los requisitos, sino que también se alinee con los objetivos
-          estratégicos de negocio.
-        </p>
-      </div>
-
       <Projects />
 
       <Footer />

@@ -15,11 +15,7 @@ export default function Topbar() {
     <header className="bg-black text-white w-full p-4 drop-shadow-2xl absolute z-1 ">
       <nav className="flex items-center justify-between">
         <div className="mx-3">
-          <Image
-            className="h-[15%] w-[15%] "
-            src={logolv}
-            alt="Lina Villalba"
-          />
+          <Image width={45} height={45} src={logolv} alt="Lina Villalba" />
         </div>
 
         <div
