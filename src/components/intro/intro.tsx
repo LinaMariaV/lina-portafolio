@@ -1,5 +1,6 @@
 import React from "react";
-import Icons from "./icons/icons";
+//import Icons from "./icons/icons";
+import Iconst from "@/utils/Icons-tecnology";
 
 export default function Intro() {
   return (
@@ -18,10 +19,11 @@ export default function Intro() {
           into high-impact web products, always prioritizing usability and
           design.
         </p>
+        <Iconst />
       </div>
-      <div className="flex flex-col items-center sm:w-1/3">
-        <Icons />
-      </div>
+      {/*<div className="flex flex-col items-center sm:w-1/3">
+       <Iconst />
+      </div> */}
     </div>
   );
 }
