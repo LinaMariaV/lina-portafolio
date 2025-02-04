@@ -1,5 +1,6 @@
 
 import { ProjectCard } from "@/utils/ProjectCard";
+import Separator from "../separator/separator";
 
 const projectsData = [
   {
@@ -25,6 +26,7 @@ const projectsData = [
 export default function Projects() {
   return (
     <div id="projects" className="w-full max-w-6xl mt-16 px-16 py-8">
+      <Separator />
       <h2 className="text-3xl font-semibold text-orange-50 mb-4 text-center">
         Projects
       </h2>
