@@ -1,9 +1,11 @@
 import { FaReact, FaNodeJs, FaHtml5, FaGithub, FaDatabase } from 'react-icons/fa';
 import { motion } from 'framer-motion'; // Animaciones
+import Separator from '../separator/separator';
 
 export default function Skills() {
   return (
-    <div className="w-full max-w-6xl px-16 py-20 font-[family-name:var(--font-inter)]">
+    <div id= "skills" className="w-full max-w-6xl px-16 py-20 font-[family-name:var(--font-inter)]">
+      <Separator />
       <h2 className="text-3xl font-semibold text-white mb-8">Habilidades Técnicas</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
