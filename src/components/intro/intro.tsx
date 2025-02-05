@@ -1,5 +1,4 @@
 import React from "react";
-//import Icons from "./icons/icons";
 import Iconst from "@/utils/Icons-tecnology";
 import Image from "next/image";
 
