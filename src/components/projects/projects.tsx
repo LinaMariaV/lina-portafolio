@@ -6,19 +6,20 @@ const projectsData = [
   {
     title: "Portafolio Web con React",
     description: "Creé este portafolio interactivo utilizando React y Next.js para mostrar mis proyectos y habilidades.",
-    link: "https://github.com/mi-repo-nextjs",
+    link: "https://github.com/LinaMariaV/lina-portafolio",
     technologies: ["React", "Next.js"]
   },
   {
     title: "Página Web Personal",
     description: "Desarrollo de una página web personal usando solo HTML, CSS y JavaScript para practicar mis habilidades básicas de desarrollo web.",
-    link: "https://github.com/mi-repo-web",
-    technologies: ["HTML5", "CSS3", "JavaScript"]
+    link: "https://travel.linavillalba.me/",
+    technologies: ["HTML5", "CSS3", "React"],
+    isExternalLink: true
   },
   {
     title: "Página Web para Fundacion ",
     description: " Colaboré en el desarrollo de una página web para una fundación",
-    link: "https://www.sitio-web-de-la-fundacion.com",
+    link: "https://funmedialma.com/",
     isExternalLink: true
   }
 ];

@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="w-full max-w-6xl px-16 py-10 font-[family-name:var(--font-inter)]"
+      className="w-full max-w-6xl px-16 pb-10 pt-5 sm:pt-20 font-[family-name:var(--font-inter)]"
     >
       <div className="flex flex-col sm:flex-row items-top text-center gap-6">
         <div className="w-full sm:w-1/3 flex justify-center">
