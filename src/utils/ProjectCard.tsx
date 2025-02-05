@@ -11,7 +11,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   link,
   technologies,
-  isExternalLink,
+  isExternalLink, 
 }) => (
   <div className="bg-slate-950 border-2  text-indigo-500 border-indigo-500 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
     
