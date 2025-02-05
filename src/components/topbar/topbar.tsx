@@ -10,9 +10,10 @@ export default function Topbar() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  
 
   return (
-    <header className="bg-black text-white w-full p-4 drop-shadow-2xl absolute z-1 ">
+    <header className="bg-black text-white w-full p-4 drop-shadow-2xl absolute z-1 sticky top-0 ">
       <nav className="flex items-center justify-between">
         <div className="mx-3">
           <Image width={45} height={45} src={logolv} alt="Lina Villalba" />
@@ -25,6 +26,9 @@ export default function Topbar() {
         >
           <a href="#about" className="hover:text-orange-50">
             About{" "}
+          </a>
+          <a href="#skills" className="hover:text-orange-50">
+            Skills
           </a>
           <a href="#projects" className="hover:text-orange-50">
             Projects

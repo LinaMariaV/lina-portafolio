@@ -1,21 +1,30 @@
 import Image from "next/image";
 import faceimage from "../../../public/face-lina.jpg";
+import Separator from "../separator/separator";
+
 
 export default function About() {
   return (
-    <div id="about" className="w-full max-w-6xl px-16 py-20 font-[family-name:var(--font-inter)]">
+    <div
+      id="about"
+      className="w-full max-w-6xl px-16 py-10 font-[family-name:var(--font-inter)]"
+    >
       <div className="flex flex-col sm:flex-row items-top text-center gap-6">
         <div className="w-full sm:w-1/3 flex justify-center">
-          <div className="relative w-full h-[200px] overflow-hidden rounded-lg border-2 text-indigo-500 border-indigo-500 ">
+          <div className="relative w-full h-[200px] overflow-hidden rounded-lg border-1 text-indigo-500 border-orange-50  mt-10">
             <Image
               src={faceimage}
-              alt="Lina Villa"
+              alt="Lina Villalba"
               layout="fill"
-              objectFit="cover"
+              style={{ objectFit: 'cover' }}
             />
           </div>
         </div>
+
         <div className="w-full sm:w-2/3 text-center">
+
+       <Separator/>
+
           <h1 className="text-3xl  text-left font-bold text-orange-50 mb-4">
             About me
           </h1>
@@ -49,6 +58,7 @@ export default function About() {
               exploring emerging technologies to ensure innovative results that
               align with market needs.
             </p>
+            
           </div>
         </div>
       </div>
