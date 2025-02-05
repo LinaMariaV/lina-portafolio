@@ -50,7 +50,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       target="_blank"
       rel="noopener noreferrer"
     >
-      {isExternalLink ? "Visitar el sitio web" : "Ver código en GitHub"}
+      {isExternalLink ? "Ir al sitio web" : "Ver código en GitHub"}
     </a>
     </div>
   </div>

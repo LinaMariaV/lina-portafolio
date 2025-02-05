@@ -4,16 +4,33 @@ import { useState } from "react";
 import Image from "next/image";
 import logolv from "../../../public/lv-logo-violet.png";
 
+interface NavLink {
+  href: string;
+  label: string;
+}
+
+const navLinks: NavLink[] = [
+  { href: "about", label: "About" },
+  { href: "skills", label: "Skills" },
+  { href: "projects", label: "Projects" },
+  { href: "contact", label: "Contact" },
+];
+
 export default function Topbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
+  const ToggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-  
+
+  const ScrollTo = (id: string): void => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <header className="bg-black text-white w-full p-4 drop-shadow-2xl absolute z-1 sticky top-0 ">
+    <header className="bg-black text-white w-full p-4 drop-shadow-2xl z-1 sticky top-0">
       <nav className="flex items-center justify-between">
         <div className="mx-3">
           <Image width={45} height={45} src={logolv} alt="Lina Villalba" />
@@ -24,24 +41,22 @@ export default function Topbar() {
             menuOpen ? "block" : "hidden"
           } sm:flex space-x-8 items-center transition-all duration-300 ease-in-out`}
         >
-          <a href="#about" className="hover:text-orange-50">
-            About{" "}
-          </a>
-          <a href="#skills" className="hover:text-orange-50">
-            Skills
-          </a>
-          <a href="#projects" className="hover:text-orange-50">
-            Projects
-          </a>
-          <a href="#contact" className="hover:text-orange-50">
-            Contact
-          </a>
+          {navLinks.map(({ href, label }) => (
+            <a
+              key={href}
+              className="hover:text-orange-50 cursor-pointer"
+              onClick={() => ScrollTo(href)}
+            >
+              {label}
+            </a>
+          ))}
 
           <button className="text-indigo-500 font-bold py-2 px-4 rounded">
             View CV
           </button>
         </div>
-        <button className="sm:hidden text-orange-50" onClick={toggleMenu}>
+
+        <button className="sm:hidden text-orange-50" onClick={ToggleMenu}>
           <svg
             className="w-6 h-6"
             fill="none"

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Intro() {
   return (
-    <div className="w-full max-w-6xl px-16 sm:px-16 pt-12 sm:pt-0 pb-0 flex flex-col sm:flex-row sm:space-x-8 sm:items-center sm:justify-start sm:min-h-screen">
+    <div className="w-full max-w-6xl px-16 sm:px-16 pt-[15vh] sm:pt-0 pb-0 flex flex-col sm:flex-row sm:space-x-8 sm:items-center sm:justify-start min-h-[90vh]">
       
       <motion.div
         className="flex flex-col items-start sm:w-2/3"
@@ -47,9 +47,9 @@ export default function Intro() {
 
       
       <motion.div
-        className="flex flex-col items-center opacity-30 hidden sm:flex sm:w-1/3"
+        className="flex flex-col items-center hidden sm:flex sm:w-1/3"
         initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
+        animate={{ opacity: .4, x: 0 }}
         transition={{ duration: 1, delay: 1 }}
       >
         <Image
