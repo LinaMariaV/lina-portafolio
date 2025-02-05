@@ -1,10 +1,11 @@
 import React from "react";
 //import Icons from "./icons/icons";
 import Iconst from "@/utils/Icons-tecnology";
+import Image from "next/image";
 
 export default function Intro() {
   return (
-    <div  className="min-h-screen w-full max-w-6xl px-16 py-20 flex flex-row flex-wrap items-center space-y-4 px-16 pt-12 sm:py-0 relative">
+    <div  className="min-h-screen w-full max-w-6xl px-16 pt-20 pb-10 flex flex-row flex-wrap items-center space-y-4 px-16 pt-12 sm:py-0 relative">
       <div className="flex flex-col items-start sm:w-2/3">
         <h2 className="text-2xl text-orange-50 font-semibold mb-2 mt-6">
           Hi, my name is
@@ -21,9 +22,15 @@ export default function Intro() {
         </p>
         <Iconst />
       </div>
-      {/*<div className="flex flex-col items-center sm:w-1/3">
-       <Iconst />
-      </div> */}
+      <div className="flex flex-col items-center opacity-30  hidden sm:flex sm:w-1/3">
+       <Image
+          src="/lv-logo-grey.png"
+          alt="Lina Villalba"
+          width={200}
+          height={200}
+          
+        />
+      </div> 
     </div>
   );
 }

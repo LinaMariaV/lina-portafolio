@@ -13,7 +13,7 @@ export default function Topbar() {
   
 
   return (
-    <header className="bg-black text-white w-full p-4 drop-shadow-2xl absolute z-1 ">
+    <header className="bg-black text-white w-full p-4 drop-shadow-2xl absolute z-1 sticky top-0 ">
       <nav className="flex items-center justify-between">
         <div className="mx-3">
           <Image width={45} height={45} src={logolv} alt="Lina Villalba" />

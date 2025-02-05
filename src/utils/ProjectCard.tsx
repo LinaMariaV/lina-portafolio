@@ -32,11 +32,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     <p className="text-sm mt-2 text-orange-50">{description}</p>
 
     {technologies && (
-      <div className="flex space-x-4 mt-2 justify-center">
+      <div className="flex space-x-6 mt-2 justify-center">
         {technologies.map((tech) => (
           <div
             key={tech}
-            className="text-sm font-semibold text-orange-50  py-1 px-4 rounded-lg hover:bg-indigo-500 hover:text-white transition duration-300 transform hover:scale-105"
+            className="text-sm font-semibold text-orange-50  py-1 rounded-lg hover:bg-indigo-500 hover:text-white transition duration-300 transform hover:scale-105"
           >
             {tech}
           </div>
