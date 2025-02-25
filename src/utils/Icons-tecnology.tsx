@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaReact, FaVuejs, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaVuejs, FaNodeJs,FaAngular, } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import SvelteLogo from "../app/icons/SvelteLogo";
 
@@ -15,6 +15,7 @@ const Iconst: React.FC = () => {
         { title: 'VueJS', Icon: FaVuejs, color: '#fff7ed', size: 30 },
         { title: 'ReactJS', Icon: FaReact, color: '#fff7ed', size: 30 },
         { title: 'NodeJS', Icon: FaNodeJs, color: '#fff7ed', size: 30 },
+        { title: 'Angular', Icon: FaAngular, color: '#fff7ed', size: 30 },  
       ].map(({ Icon, color, size, title }, index) => (
         <motion.div
           key={index}
