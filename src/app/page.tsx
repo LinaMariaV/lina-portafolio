@@ -1,5 +1,5 @@
 "use client";
-
+import BackgroundEffect from "./effects/BackgroundEffect";
 import Topbar from "@/components/topbar/topbar";
 import Intro from "@/components/intro/intro";
 import Projects from "@/components/projects/projects";
@@ -13,6 +13,8 @@ export default function Home() {
       id="root"
       className="flex flex-col items-center bg-slate-950 min-h-screen scroll-smooth"
     >
+      <BackgroundEffect />
+      
       <Topbar />
 
       <Intro />
