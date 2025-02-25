@@ -4,6 +4,7 @@ import {
   FaHtml5,
   FaGithub,
   FaDatabase,
+  FaServer,
 } from "react-icons/fa";
 import Separator from "../separator/separator";
 
@@ -21,7 +22,7 @@ const skillsData = [
     id: 2,
     icon: <FaReact className="text-orange-50 w-8 h-8" />,
     title: "Frameworks y Herramientas",
-    items: ["React / Next.js", "Git / GitHub", "Bootstrap"],
+    items: ["React / Next.js", "Angular", "Bootstrap"],
     
   },
   {
@@ -44,6 +45,12 @@ const skillsData = [
     title: "Control de Versiones",
     items: ["Git / GitHub"],
     
+  },
+  {
+    id: 6,
+    icon: <FaServer className="text-orange-50 w-8 h-8" />, 
+    title: "Conocimientos en Servidores",
+    items: ["Administración básica de servidores (Linux)", "Nginx", ],
   },
 ];
 
