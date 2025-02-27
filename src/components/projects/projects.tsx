@@ -2,38 +2,39 @@ import { ProjectCard } from "@/utils/ProjectCard";
 import Separator from "../separator/separator";
 import Image from "next/image";
 import Projectimage2 from "../../../public/project-2.png";
-import Projectimage1 from "../../../public/project-1.jpg";
-import Projectimage3 from "../../../public/project-3.png";
 
+import Projectimage3 from "../../../public/project-3.png";
+import Projectimage4 from "../../../public/project-port.png";
 const projectsData = [
   {
-    title: "Portafolio Web con React",
-    description: "Creé este portafolio interactivo utilizando React y Next.js para mostrar mis proyectos y habilidades.",
-    link: 
-    "https://travel.linavillalba.me/",
-    githubLink: "https://github.com/LinaMariaV/lina-portafolio",
-    technologies: ["React", "Next.js", ],
+      title: "Página Web para Fundación",
+      description: "Colaboré en el desarrollo de una página web para una fundación, utilizando Angular y TypeScript. Este proyecto tuvo como objetivo proporcionar información y recursos a los beneficiarios de la fundación, implementando un diseño responsivo y accesible para todos los dispositivos.",
+      link: "https://funmedialma.com/",
+      githubLink: "https://github.com/LinaMariaV/fundacion-project",
+      technologies: ["Angular", "TypeScript", "HTML5", "CSS3"],
+      isExternalLink: true,
+      image: Projectimage3,
+    },
+    {
+    title: " Portafolio cliente Mortgage consultant",
+    description: "Portafolio para cliente de hipotecas. Diseñado y desarrollado con React y Next.js, con un diseño moderno y atractivo para atraer a nuevos clientes.",
+    link: "https://luis.inaseft.com/",  
+    technologies: ["React", "Next.js"],
+    isExternalLink: true,
+    image: Projectimage4,
+  },
+  
+  {
+    title: "Proyecto Viajes",
+    description: "Diseñé y desarrollé, como proyecto educativo, una página web para una agencia de viajes, utilizando React, Bootstrap y Node.js. La aplicación permite a los usuarios explorar diferentes destinos y realizar reservas  de tiquetes en línea, proporcionando una interfaz atractiva y fácil de usar.",
+    link: "https://linavillalba.me",  
+    githubLink: "https://github.com/LinaMariaV/travel-project",
+    technologies: ["React", "Bootstrap", "Node.js"],
     isExternalLink: true,
     image: Projectimage2,
   },
-  {
-    title: "Proyecto Viajes",
-    description: " Proyecto de página web para agencia de viajes",
-    link: "https://linavillalba.me",  
-    githubLink: "https://github.com/LinaMariaV/travel-project",
-    technologies: [ "React", "Bootstrap", "Node.js"],
-    isExternalLink: true,
-    image: Projectimage1,
-  },
-  {
-    title: "Página Web para Fundación",
-    description: "Colaboré en el desarrollo de una página web para una fundación",
-    link: "https://funmedialma.com/",
-    githubLink: "https://github.com/LinaMariaV/fundacion-project",
-    technologies: ["Angular", "TypeScript", "HTML5", "CSS3"],
-    isExternalLink: true,
-    image: Projectimage3,
-  },
+  
+  
 ];
 
 export default function Projects() {
@@ -44,7 +45,7 @@ export default function Projects() {
         Projects
       </h2>
 
-      <div className="grid grid-cols-1 gap-32">
+      <div className="grid grid-cols-1 gap-40">
         {projectsData.map((project, index) => (
           <div
             key={index}
@@ -52,7 +53,7 @@ export default function Projects() {
               index % 2 === 0 ? "md:flex-row-reverse" : ""
             }`}
           >
-            <div className="w-full md:w-2/4 mb-8 ">
+            <div className="w-full md:w-2/4 mb-8  ">
               <div className="w-full md:w-2/3 mx-auto">
                 <ProjectCard {...project} />
               </div>
@@ -90,10 +91,10 @@ export default function Projects() {
                       <Image
                         src={project.image}
                         alt={`Imagen del proyecto ${project.title}`}
-                        className="rounded-b-lg object-cover border-2
+                        className=" border-2 rounded-b-lg object-cover 
                       transition-transform duration-500 ease-in-out
                       group-hover:scale-105
-                      shadow-xl"
+                      shadow-xl "
                         layout="fill"
                         priority={index === 0}
                       />

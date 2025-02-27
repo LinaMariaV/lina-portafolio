@@ -22,7 +22,7 @@ const skillsData = [
     id: 2,
     icon: <FaReact className="text-orange-50 w-8 h-8" />,
     title: "Frameworks y Herramientas",
-    items: ["React / Next.js", "Angular", "Bootstrap"],
+    items: ["React / Next.js", "Angular", "WordPress", "Bootstrap"],
     
   },
   {
