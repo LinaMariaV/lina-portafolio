@@ -27,6 +27,8 @@ export default function BackgroundEffect() {
       playpen.style.background = originalBGplaypen;
     };
 
+    
+
     playpen.addEventListener("mousemove", handleMouseMovePlaypen);
     playpen.addEventListener("mouseleave", handleMouseLeavePlaypen);
   }, []);
