@@ -2,7 +2,6 @@ import Image from "next/image";
 import faceimage from "../../../public/face-lina.jpg";
 import Separator from "../separator/separator";
 
-
 export default function About() {
   return (
     <div
@@ -16,14 +15,13 @@ export default function About() {
               src={faceimage}
               alt="Lina Villalba"
               layout="fill"
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>
 
         <div className="w-full sm:w-2/3 text-center">
-
-       <Separator/>
+          <Separator />
 
           <h1 className="text-3xl  text-left font-bold text-orange-50 mb-4">
             About me
@@ -58,7 +56,6 @@ export default function About() {
               exploring emerging technologies to ensure innovative results that
               align with market needs.
             </p>
-            
           </div>
         </div>
       </div>
