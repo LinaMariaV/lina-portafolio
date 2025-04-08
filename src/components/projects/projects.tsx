@@ -7,9 +7,9 @@ import Projectimage3 from "../../../public/project-3.png";
 import Projectimage4 from "../../../public/project-port.png";
 const projectsData = [
   {
-    title: "Página Web para Fundación",
+    title: "Foundation Website",
     description:
-      "Colaboré en el desarrollo de una página web para una fundación, utilizando Angular y TypeScript. Este proyecto tuvo como objetivo proporcionar información y recursos a los beneficiarios de la fundación, implementando un diseño responsivo y accesible para todos los dispositivos.",
+      "I collaborated on developing a website for a foundation using Angular and TypeScript. This project aimed to provide information and resources to foundation beneficiaries, implementing a responsive and accessible design for all devices.",
     link: "https://funmedialma.com/",
     //githubLink: "https://github.com/LinaMariaV/fundacion-project",
     technologies: ["Angular", "TypeScript", "HTML5", "CSS3"],
@@ -17,19 +17,18 @@ const projectsData = [
     image: Projectimage3,
   },
   {
-    title: " Portafolio cliente Mortgage consultant",
+    title: "Mortgage Consultant Portfolio",
     description:
-      "Portafolio para cliente de hipotecas. Diseñado y desarrollado con React y Next.js, con un diseño moderno y atractivo para atraer a nuevos clientes.",
+      "Portfolio for a mortgage client. Designed and developed with React and Next.js, featuring a modern and attractive design to attract new clients.",
     link: "https://caicedolending.com/",
     technologies: ["React", "Next.js"],
     isExternalLink: true,
     image: Projectimage4,
   },
-
   {
-    title: "Proyecto Viajes",
+    title: "Travel Project",
     description:
-      "Diseñé y desarrollé, como proyecto educativo, una página web para una agencia de viajes, utilizando React, Bootstrap y Node.js. La aplicación permite a los usuarios explorar diferentes destinos y realizar reservas  de tiquetes en línea, proporcionando una interfaz atractiva y fácil de usar.",
+      "As an educational project, I designed and developed a website for a travel agency using React, Bootstrap, and Node.js. The application allows users to explore different destinations and make ticket reservations online, providing an attractive and user-friendly interface.",
     link: "https://linavillalba.me",
     //githubLink: "https://github.com/LinaMariaV/travel-project",
     technologies: ["React", "Bootstrap", "Node.js"],
