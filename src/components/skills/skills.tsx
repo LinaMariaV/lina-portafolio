@@ -25,7 +25,7 @@ const skillsData = [
     id: 3,
     icon: <FaDatabase className="text-orange-50 w-8 h-8" />,
     title: "Database & Data Analytics",
-    items: ["SQL", "MongoDB", "NewRelic"],
+    items: ["SQL", "MongoDB", "New Relic"],
   },
   {
     id: 4,
