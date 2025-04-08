@@ -50,7 +50,7 @@ export default function Topbar() {
 
           <a
             className="nav-item text-indigo-500 font-bold py-2 px-4 rounded cursor-pointer"
-            href="/LinaVillalbaCV.pdf"
+            href="/CV-LINA.pdf"
             target="_blank"
             rel="noreferrer"
           >
@@ -100,8 +100,9 @@ export default function Topbar() {
         ))}
         <a
           className="nav-item block text-indigo-500 font-bold py-2 px-4 rounded"
-          href="/LinaVillalbaCV.pdf"
-          target="_blank"
+          href="/CV-LINA.pdf"
+          download
+          
           rel="noreferrer"
         >
           View CV
