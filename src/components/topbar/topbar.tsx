@@ -13,7 +13,7 @@ const navLinks: NavLink[] = [
   { href: "about", label: "About" },
   { href: "skills", label: "Skills" },
   { href: "projects", label: "Projects" },
-  { href: "contact", label: "Contact" },
+  { href: "mailto:linavilla1499@gmail.com", label: "Contact" },
 ];
 
 export default function Topbar() {
@@ -23,10 +23,14 @@ export default function Topbar() {
     setMenuOpen(!menuOpen);
   };
 
-  const ScrollTo = (id: string): void => {
-    document.getElementById(id)?.scrollIntoView({
-      behavior: "smooth",
-    });
+  const handleNavigation = (href: string): void => {
+    if (href.startsWith('mailto:')) {
+      window.location.href = href;
+    } else {
+      document.getElementById(href)?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
@@ -42,7 +46,7 @@ export default function Topbar() {
             <a
               key={href}
               className="nav-item cursor-pointer " 
-              onClick={() => ScrollTo(href)}
+              onClick={() => handleNavigation(href)}
             >
               {label}
             </a>
@@ -91,7 +95,7 @@ export default function Topbar() {
             key={href}
             className="nav-item block  cursor-pointer"
             onClick={() => {
-              ScrollTo(href);
+              handleNavigation(href);
               setMenuOpen(false);
             }}
           >
