@@ -8,49 +8,42 @@ import {
 } from "react-icons/fa";
 import Separator from "../separator/separator";
 
-
-
 const skillsData = [
   {
     id: 1,
     icon: <FaHtml5 className="text-orange-50 w-8 h-8" />,
     title: "Frontend Development",
-    items: ["JavaScript", "HTML / CSS", "SQL (Básico)"],
-    
+    items: ["JavaScript", "HTML / CSS"],
   },
   {
     id: 2,
     icon: <FaReact className="text-orange-50 w-8 h-8" />,
-    title: "Frameworks y Herramientas",
-    items: ["React / Next.js", "Angular", "WordPress", "Bootstrap"],
-    
+    title: "Frameworks & Tools",
+    items: ["React / Next.js", "Angular", "WordPress", "Bootstrap", "Tailwind "],
   },
   {
     id: 3,
     icon: <FaDatabase className="text-orange-50 w-8 h-8" />,
-    title: "Base de Datos",
-    items: ["SQL", "MongoDB"],
-    
+    title: "Database & Data Analytics",
+    items: ["SQL", "MongoDB", "NewRelic"],
   },
   {
     id: 4,
     icon: <FaNodeJs className="text-orange-50 w-8 h-8" />,
     title: "Backend Development",
-    items: ["Node.js", "Express.js", "API Restful"],
-    
+    items: ["Node.js", "Express.js", "RESTful API"],
   },
   {
     id: 5,
     icon: <FaGithub className="text-orange-50 w-8 h-8" />,
-    title: "Control de Versiones",
+    title: "Version Control",
     items: ["Git / GitHub"],
-    
   },
   {
     id: 6,
-    icon: <FaServer className="text-orange-50 w-8 h-8" />, 
-    title: "Conocimientos en Servidores",
-    items: ["Administración básica de servidores (Linux)", "Nginx", ],
+    icon: <FaServer className="text-orange-50 w-8 h-8" />,
+    title: "Server Knowledge",
+    items: ["Basic Server Administration (Linux)", "Nginx"],
   },
 ];
 
@@ -58,11 +51,11 @@ export default function Skills() {
   return (
     <div
       id="skills"
-      className="w-full max-w-6xl  px-16 py-20 font-[family-name:var(--font-inter)]"
+      className="w-full max-w-6xl px-16 py-20 font-[family-name:var(--font-inter)]"
     >
       <Separator />
       <h2 className="text-3xl font-semibold text-white mb-8">
-        Habilidades Técnicas
+        Technical Skills
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
