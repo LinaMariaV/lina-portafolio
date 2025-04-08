@@ -7,34 +7,35 @@ import Projectimage3 from "../../../public/project-3.png";
 import Projectimage4 from "../../../public/project-port.png";
 const projectsData = [
   {
-      title: "Página Web para Fundación",
-      description: "Colaboré en el desarrollo de una página web para una fundación, utilizando Angular y TypeScript. Este proyecto tuvo como objetivo proporcionar información y recursos a los beneficiarios de la fundación, implementando un diseño responsivo y accesible para todos los dispositivos.",
-      link: "https://funmedialma.com/",
-      githubLink: "https://github.com/LinaMariaV/fundacion-project",
-      technologies: ["Angular", "TypeScript", "HTML5", "CSS3"],
-      isExternalLink: true,
-      image: Projectimage3,
-    },
-    {
+    title: "Página Web para Fundación",
+    description:
+      "Colaboré en el desarrollo de una página web para una fundación, utilizando Angular y TypeScript. Este proyecto tuvo como objetivo proporcionar información y recursos a los beneficiarios de la fundación, implementando un diseño responsivo y accesible para todos los dispositivos.",
+    link: "https://funmedialma.com/",
+    //githubLink: "https://github.com/LinaMariaV/fundacion-project",
+    technologies: ["Angular", "TypeScript", "HTML5", "CSS3"],
+    isExternalLink: true,
+    image: Projectimage3,
+  },
+  {
     title: " Portafolio cliente Mortgage consultant",
-    description: "Portafolio para cliente de hipotecas. Diseñado y desarrollado con React y Next.js, con un diseño moderno y atractivo para atraer a nuevos clientes.",
-    link: "https://luis.inaseft.com/",  
+    description:
+      "Portafolio para cliente de hipotecas. Diseñado y desarrollado con React y Next.js, con un diseño moderno y atractivo para atraer a nuevos clientes.",
+    link: "https://caicedolending.com/",
     technologies: ["React", "Next.js"],
     isExternalLink: true,
     image: Projectimage4,
   },
-  
+
   {
     title: "Proyecto Viajes",
-    description: "Diseñé y desarrollé, como proyecto educativo, una página web para una agencia de viajes, utilizando React, Bootstrap y Node.js. La aplicación permite a los usuarios explorar diferentes destinos y realizar reservas  de tiquetes en línea, proporcionando una interfaz atractiva y fácil de usar.",
-    link: "https://linavillalba.me",  
-    githubLink: "https://github.com/LinaMariaV/travel-project",
+    description:
+      "Diseñé y desarrollé, como proyecto educativo, una página web para una agencia de viajes, utilizando React, Bootstrap y Node.js. La aplicación permite a los usuarios explorar diferentes destinos y realizar reservas  de tiquetes en línea, proporcionando una interfaz atractiva y fácil de usar.",
+    link: "https://linavillalba.me",
+    //githubLink: "https://github.com/LinaMariaV/travel-project",
     technologies: ["React", "Bootstrap", "Node.js"],
     isExternalLink: true,
     image: Projectimage2,
   },
-  
-  
 ];
 
 export default function Projects() {
