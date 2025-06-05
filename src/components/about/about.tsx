@@ -29,7 +29,7 @@ export default function About() {
           <div>
             <p className="text-lg mb-8 text-gray-300 max-w-3xl mx-auto text-justify">
               {" "}
-              I'm Lina, a freelance developer with end-to-end experience in
+              I&#39;m Lina, a freelance developer with end-to-end experience in
               building digital products—from crafting user interfaces to
               implementing APIs and deploying to production. I&#39;ve worked on
               various projects handling both frontend and backend development,
