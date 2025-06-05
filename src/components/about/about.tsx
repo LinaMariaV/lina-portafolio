@@ -28,33 +28,28 @@ export default function About() {
           </h1>
           <div>
             <p className="text-lg mb-8 text-gray-300 max-w-3xl mx-auto text-justify">
-              I am Lina, a programmer passionate about creating digital
-              solutions that improve the user experience. My journey in
-              programming started with basic projects, learning HTML and CSS,
-              which gave me a solid understanding of web structure and design.
-              Over time, I delved into JavaScript, which provided me with the
-              tools to start developing interactive applications.
-              <br />
-              <br />
-              Along this path, I have worked with technologies such as React,
-              Next.js, and Node.js, which have allowed me to develop dynamic and
-              efficient applications. I recently completed my Technical Degree
-              in Software Programming, which gave me a stronger foundation in
-              data structures, algorithms, and best development practices.
-              <br />
-              <br />
-              During my internship, I worked on an artificial intelligence
-              project that optimized access to and decision-making from large
-              volumes of data. This experience allowed me to apply my technical
-              skills in a real-world environment, learning about the integration
-              of complex systems and how technology can transform business
-              processes.
-              <br />
-              <br />
-              Currently, I focus on developing accessible, efficient, and
-              high-impact digital solutions, always adopting best practices and
-              exploring emerging technologies to ensure innovative results that
-              align with market needs.
+              {" "}
+              I'm Lina, a freelance developer with end-to-end experience in
+              building digital products—from crafting user interfaces to
+              implementing APIs and deploying to production. I’ve worked on
+              various projects handling both frontend and backend development,
+              leading complete development cycles with a focus on quality,
+              scalability, and user experience. <br /> <br /> While I’m
+              especially passionate about frontend development and creating
+              experiences that connect with people, I’m also confident working
+              on the backend. I’ve built APIs, configured servers, managed
+              databases, and deployed applications using tools like Nginx. This
+              versatility has allowed me to work independently on full product
+              builds. <br /> <br /> My main tech stack includes React, Next.js,
+              Node.js, and Express, but I’m always learning and adapting to each
+              project’s needs. As a freelancer, I’ve developed strong
+              problem-solving skills and the ability to make strategic technical
+              decisions. In team environments, I follow best practices in
+              collaboration, version control, and agile methodologies. <br />{" "}
+              <br /> Currently, I focus on building solid, accessible, and
+              high-impact digital solutions. I’m driven to keep growing as a
+              fullstack developer, exploring new technologies, and creating
+              products that deliver real-world value.{" "}
             </p>
           </div>
         </div>
