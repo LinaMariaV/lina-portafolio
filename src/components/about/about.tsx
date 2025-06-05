@@ -31,23 +31,23 @@ export default function About() {
               {" "}
               I'm Lina, a freelance developer with end-to-end experience in
               building digital products—from crafting user interfaces to
-              implementing APIs and deploying to production. I’ve worked on
+              implementing APIs and deploying to production. I&#39;ve worked on
               various projects handling both frontend and backend development,
               leading complete development cycles with a focus on quality,
-              scalability, and user experience. <br /> <br /> While I’m
+              scalability, and user experience. <br /> <br /> While I&#39;m
               especially passionate about frontend development and creating
-              experiences that connect with people, I’m also confident working
-              on the backend. I’ve built APIs, configured servers, managed
+              experiences that connect with people, I&#39;m also confident working
+              on the backend. I&#39;ve built APIs, configured servers, managed
               databases, and deployed applications using tools like Nginx. This
               versatility has allowed me to work independently on full product
               builds. <br /> <br /> My main tech stack includes React, Next.js,
-              Node.js, and Express, but I’m always learning and adapting to each
-              project’s needs. As a freelancer, I’ve developed strong
+              Node.js, and Express, but I&#39;m always learning and adapting to each
+              project&#39;s needs. As a freelancer, I&#39;ve developed strong
               problem-solving skills and the ability to make strategic technical
               decisions. In team environments, I follow best practices in
               collaboration, version control, and agile methodologies. <br />{" "}
               <br /> Currently, I focus on building solid, accessible, and
-              high-impact digital solutions. I’m driven to keep growing as a
+              high-impact digital solutions. I&#39;m driven to keep growing as a
               fullstack developer, exploring new technologies, and creating
               products that deliver real-world value.{" "}
             </p>
