@@ -13,7 +13,7 @@ const skillsData = [
     id: 1,
     icon: <FaHtml5 className="text-orange-50 w-8 h-8" />,
     title: "Frontend Development",
-    items: ["JavaScript", "HTML / CSS"],
+    items: ["JavaScript","Typescript", "HTML / CSS"],
   },
   {
     id: 2,
