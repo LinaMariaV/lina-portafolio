@@ -54,7 +54,7 @@ export default function Topbar() {
 
           <a
             className="nav-item text-indigo-500 font-bold py-2 px-4 rounded cursor-pointer"
-            href="/CV-LINA.pdf"
+            href="/cv_linamv.pdf"
             target="_blank"
             rel="noreferrer"
           >
