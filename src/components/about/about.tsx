@@ -28,28 +28,30 @@ export default function About() {
           </h1>
           <div>
             <p className="text-lg mb-8 text-gray-300 max-w-3xl mx-auto text-justify">
-              {" "}
               I&#39;m Lina, a freelance developer with end-to-end experience in
               building digital products—from crafting user interfaces to
-              implementing APIs and deploying to production. I&#39;ve worked on
+              implementing APIs and deploying to production. I’ve worked on
               various projects handling both frontend and backend development,
               leading complete development cycles with a focus on quality,
               scalability, and user experience. <br /> <br /> While I&#39;m
               especially passionate about frontend development and creating
-              experiences that connect with people, I&#39;m also confident working
-              on the backend. I&#39;ve built APIs, configured servers, managed
-              databases, and deployed applications using tools like Nginx. This
-              versatility has allowed me to work independently on full product
-              builds. <br /> <br /> My main tech stack includes React, Next.js,
-              Node.js, and Express, but I&#39;m always learning and adapting to each
-              project&#39;s needs. As a freelancer, I&#39;ve developed strong
-              problem-solving skills and the ability to make strategic technical
-              decisions. In team environments, I follow best practices in
-              collaboration, version control, and agile methodologies. <br />{" "}
-              <br /> Currently, I focus on building solid, accessible, and
-              high-impact digital solutions. I&#39;m driven to keep growing as a
-              fullstack developer, exploring new technologies, and creating
-              products that deliver real-world value.{" "}
+              user-centered experiences, I&#39;m also confident working on the
+              backend. I&#39;ve built APIs, configured servers, managed databases,
+              and deployed applications using tools like Nginx. My backend
+              experience includes both Node.js/Express and Java Spring Boot,
+              which allows me to adapt to different architectures and project
+              needs. This versatility has enabled me to work independently on
+              full product builds as well as integrate seamlessly into team
+              environments. <br /> <br /> My main tech stack includes React,
+              Next.js, Node.js, Express, and Spring Boot, but I&#39;m always
+              learning and adapting to each project&#39;s requirements. As a
+              freelancer, I&#39;ve developed strong problem-solving skills and the
+              ability to make strategic technical decisions. In team
+              environments, I follow best practices in collaboration, version
+              control, and agile methodologies. <br /> <br /> Currently, I focus
+              on building solid, accessible, and high-impact digital solutions
+              while continuing to grow as a fullstack developer, exploring new
+              technologies, and creating products that deliver real-world value.
             </p>
           </div>
         </div>
