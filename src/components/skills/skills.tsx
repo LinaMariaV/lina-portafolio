@@ -31,7 +31,7 @@ const skillsData = [
     id: 4,
     icon: <FaNodeJs className="text-orange-50 w-8 h-8" />,
     title: "Backend Development",
-    items: ["Node.js", "Express.js", "RESTful API"],
+    items: ["Node.js","Java", "Express.js", "RESTful API"],
   },
   {
     id: 5,
