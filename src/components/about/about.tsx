@@ -6,11 +6,11 @@ export default function About() {
   return (
     <div
       id="about"
-      className="w-full max-w-6xl px-16 pb-10 pt-5 sm:pt-20 font-[family-name:var(--font-inter)]"
+      className="w-full max-w-6xl px-6 sm:px-8 pb-10 pt-5 sm:pt-20"
     >
-      <div className="flex flex-col sm:flex-row items-top text-center gap-6">
+      <div className="flex flex-col sm:flex-row items-start gap-8 sm:gap-12">
         <div className="w-full sm:w-1/3 flex justify-center">
-          <div className="relative w-full h-[200px] overflow-hidden rounded-lg border-1 text-indigo-500 border-orange-50  mt-10">
+          <div className="relative w-full h-[250px] overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow">
             <Image
               src={faceimage}
               alt="Lina Villalba"
@@ -20,14 +20,14 @@ export default function About() {
           </div>
         </div>
 
-        <div className="w-full sm:w-2/3 text-center">
+        <div className="w-full sm:w-2/3">
           <Separator />
 
-          <h1 className="text-3xl  text-left font-bold text-orange-50 mb-4">
+          <h2 className="text-4xl font-bold text-black dark:text-white mb-6">
             About me
-          </h1>
-          <div>
-            <p className="text-lg mb-8 text-gray-300 max-w-3xl mx-auto text-justify">
+          </h2>
+          <div className="space-y-4">
+            <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
               I&#39;m Lina, a freelance developer with end-to-end experience in
               building digital products—from crafting user interfaces to
               implementing APIs and deploying to production. I’ve worked on
