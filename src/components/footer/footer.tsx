@@ -8,7 +8,7 @@ export default  function Footer (){
             aria-label="GitHub"
             target="_blank"
             rel="noreferrer"
-            className="text-3xl  text-orange-50 hover:text-indigo-500 transition-colors duration-200"
+            className="text-3xl   hover:text-indigo-500 transition-colors duration-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ export default  function Footer (){
             aria-label="Instagram"
             target="_blank"
             rel="noreferrer"
-            className="text-3xl text-orange-50 hover:text-indigo-500 transition-colors duration-200"
+            className="text-3xl  hover:text-indigo-500 transition-colors duration-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ export default  function Footer (){
             aria-label="LinkedIn"
             target="_blank"
             rel="noreferrer"
-            className="text-3xl text-orange-50 hover:text-indigo-500 transition-colors duration-200"
+            className="text-3xl  hover:text-indigo-500 transition-colors duration-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ export default  function Footer (){
             </svg>
           </a>
 
-          <div className="w-px h-24 bg-orange-50"></div>
+          <div className="w-px h-24 bg-black"></div>
         </div>
 
         <div className="grow"></div>
@@ -66,12 +66,12 @@ export default  function Footer (){
             aria-label="correo"
             target="_blank"
             rel="noreferrer"
-            className="text-3xl text-sm   text-orange-50 hover:text-indigo-500 transform rotate-90 origin-bottom duration-200 absolute top-[-90px] right-[-53px]"
+            className="text-3xl text-sm    hover:text-indigo-500 transform rotate-90 origin-bottom duration-200 absolute top-[-90px] right-[-53px]"
           >
             linavilla1499@gmail.com
           </a>
 
-          <div className="w-px h-24  bg-orange-50  mt-8"></div>
+          <div className="w-px h-24  bg-black  mt-8"></div>
         </div>
       </footer>
     )
