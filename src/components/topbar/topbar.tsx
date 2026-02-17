@@ -34,18 +34,18 @@ export default function Topbar() {
   };
 
   return (
-    <header className="bg-black text-white w-full p-4 drop-shadow-2xl sticky top-0 z-10">
-      <nav className="flex items-center justify-between">
-        <div className="mx-3">
-          <Image width={45} height={45} src={logolv} alt="Lina Villalba" />
+    <header className="bg-white dark:bg-black text-black dark:text-white w-full px-6 py-3 border-b border-gray-200 dark:border-gray-800 sticky top-0 z-10 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+      <nav className="flex items-center justify-between max-w-6xl mx-auto">
+        <div className="flex-shrink-0 opacity-80 hover:opacity-100 transition-opacity">
+          <Image width={40} height={40} src={logolv} alt="Lina Villalba" />
         </div>
 
-        <div className="hidden sm:flex space-x-8 items-center">
+        <div className="hidden sm:flex space-x-10 items-center">
           
           {navLinks.map(({ href, label }) => (
             <a
               key={href}
-              className="nav-item cursor-pointer " 
+              className="nav-item cursor-pointer text-gray-700 dark:text-gray-300" 
               onClick={() => handleNavigation(href)}
             >
               {label}
@@ -53,7 +53,7 @@ export default function Topbar() {
           ))}
 
           <a
-            className="nav-item text-indigo-500 font-bold py-2 px-4 rounded cursor-pointer"
+            className="nav-item px-4 py-2 text-sm font-medium rounded-full bg-black dark:bg-white text-white dark:text-black hover:opacity-80 transition-opacity"
             href="/cv_linamv.pdf"
             target="_blank"
             rel="noreferrer"
@@ -63,7 +63,7 @@ export default function Topbar() {
         </div>
 
         <button
-          className="sm:hidden text-orange-50"
+          className="sm:hidden text-gray-700 dark:text-white"
           onClick={ToggleMenu}
           aria-label="Toggle menu"
         >
@@ -88,12 +88,12 @@ export default function Topbar() {
       <div
         className={`${
           menuOpen ? "block" : "hidden"
-        } sm:hidden w-full bg-black text-white p-4 space-y-4 text-center transition-all ease-in-out`}
+        } sm:hidden w-full bg-white dark:bg-black text-gray-700 dark:text-white p-4 space-y-3 text-center transition-all ease-in-out border-t border-gray-200 dark:border-gray-800`}
       >
         {navLinks.map(({ href, label }) => (
           <a
             key={href}
-            className="nav-item block  cursor-pointer"
+            className="nav-item block cursor-pointer text-sm py-2"
             onClick={() => {
               handleNavigation(href);
               setMenuOpen(false);
@@ -103,7 +103,7 @@ export default function Topbar() {
           </a>
         ))}
         <a
-          className="nav-item block text-indigo-500 font-bold py-2 px-4 rounded"
+          className="nav-item block text-sm font-medium py-2 px-4 rounded-full bg-black dark:bg-white text-white dark:text-black inline-block mx-auto"
           href="/CV-LINA.pdf"
           download
           
