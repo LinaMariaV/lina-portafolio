@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
-const lightColor = "rgba(112, 104, 104, 0.5)";
-const gradientSize = 150;
+const lightColor = "rgba(0, 0, 0, 0.03)";
+const gradientSize = 200;
 
 export default function BackgroundEffect() {
   useEffect(() => {
@@ -9,6 +9,7 @@ export default function BackgroundEffect() {
     if (!playpen) return;
 
     const originalBGplaypen = getComputedStyle(playpen).backgroundColor;
+    const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
     const handleMouseMovePlaypen = (e: MouseEvent) => {
       const x = e.pageX - playpen.offsetLeft;
