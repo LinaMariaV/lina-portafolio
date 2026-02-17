@@ -39,74 +39,47 @@ const projectsData = [
 
 export default function Projects() {
   return (
-    <div id="projects" className="w-full max-w-6xl mt-16 px-16 py-8">
+    <div id="projects" className="w-full max-w-6xl mt-16 px-6 sm:px-8 py-8">
       <Separator />
-      <h2 className="text-3xl font-semibold text-orange-50 mb-16 text-center">
-        Projects
+      <h2 className="text-4xl font-bold text-black dark:text-white mb-16 text-center">
+        Featured Projects
       </h2>
 
-      <div className="grid grid-cols-1 gap-40">
+      <div className="grid grid-cols-1 gap-20">
         {projectsData.map((project, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row items-center relative justify-between gap-8 ${
+            className={`flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 ${
               index % 2 === 0 ? "md:flex-row-reverse" : ""
             }`}
           >
-            <div className="w-full md:w-2/4 mb-8  ">
-              <div className="w-full md:w-2/3 mx-auto">
-                <ProjectCard {...project} />
-              </div>
+            <div className="w-full md:w-2/5">
+              <ProjectCard {...project} />
             </div>
 
             <div
-              className="relative w-full md:w-2/4"
-              style={{ height: "300px" }}
+              className="relative w-full md:w-3/5"
+              style={{ height: "350px" }}
             >
-              <div className="absolute inset-0 flex flex-col justify-between bg-[#2d2d2d] rounded-lg shadow-lg overflow-hidden">
-                <div className="h-4 bg-[#f0f0f0] rounded-t-lg flex items-center px-2 gap-1 relative">
-                  <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <div className="w-16 h-3 bg-gray-300 rounded-t-sm ml-2 top-[1px] relative text-[7px] pl-1 text-gray-500">
-                    <div className="relative top-[1px] truncate w-full pr-2">
-                      {project.title}
-                    </div>
-                    <div className="absolute right-[5px] top-0 text-[8px] text-gray-700">
-                      x
-                    </div>
-                  </div>
-                </div>
-
-                <div className="relative w-full h-full opacity-85 ">
-                  <div
-                    className="group relative w-full h-full 
-                before:absolute before:inset-0 
-                before:bg-indigo-500/10 before:rounded-b-lg
-                before:transform before:transition-all before:duration-300
-                hover:before:bg-indigo-500/0
-                overflow-hidden"
-                  >
-                    {project.image && (
-                      <Image
-                        src={project.image}
-                        alt={`Imagen del proyecto ${project.title}`}
-                        className=" border-2 rounded-b-lg object-cover 
-                      transition-transform duration-500 ease-in-out
-                      group-hover:scale-105
-                      shadow-xl "
-                        layout="fill"
-                        priority={index === 0}
-                      />
-                    )}
-
-                    <div
-                      className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent 
-                  opacity-0 group-hover:opacity-100 
-                  transition-opacity duration-300 
-                  rounded-b-lg"
+              <div className="absolute inset-0 rounded-lg border border-gray-300 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div
+                  className="group relative w-full h-full overflow-hidden"
+                >
+                  {project.image && (
+                    <Image
+                      src={project.image}
+                      alt={`Project ${project.title}`}
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      layout="fill"
+                      priority={index === 0}
                     />
-                  </div>
+                  )}
+
+                  <div
+                    className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent 
+                  opacity-0 group-hover:opacity-100 
+                  transition-opacity duration-300"
+                  />
                 </div>
               </div>
             </div>
