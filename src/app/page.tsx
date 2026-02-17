@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main
       id="root"
-      className="flex flex-col items-center bg-slate-950 min-h-screen scroll-smooth"
+      className="flex flex-col items-center bg-white dark:bg-neutral-950 min-h-screen scroll-smooth"
     >
       <BackgroundEffect />
       
