@@ -13,7 +13,7 @@ export default function Intro() {
         transition={{ duration: 0.8, delay: 0.1 }}
       >
         <h2 className="text-lg text-gray-600 dark:text-gray-400 font-medium mb-3 tracking-wide">
-          Hello, I'm
+          Hello, I&#39m
         </h2>
         <motion.h1
           className="text-6xl sm:text-7xl font-bold text-black dark:text-white mb-4"

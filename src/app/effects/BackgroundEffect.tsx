@@ -9,7 +9,7 @@ export default function BackgroundEffect() {
     if (!playpen) return;
 
     const originalBGplaypen = getComputedStyle(playpen).backgroundColor;
-    const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    //const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
     const handleMouseMovePlaypen = (e: MouseEvent) => {
       const x = e.pageX - playpen.offsetLeft;
