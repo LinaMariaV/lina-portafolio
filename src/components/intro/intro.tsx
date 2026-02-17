@@ -4,53 +4,58 @@ import Image from "next/image";
 
 export default function Intro() {
   return (
-    <div className="w-full max-w-6xl px-16 sm:px-16 pt-[15vh] sm:pt-0 pb-0 flex flex-col sm:flex-row sm:space-x-8 sm:items-center sm:justify-start min-h-[90vh]">
+    <div className="w-full max-w-6xl px-6 sm:px-8 pt-[12vh] sm:pt-0 pb-0 flex flex-col sm:flex-row sm:space-x-12 sm:items-center sm:justify-start min-h-[90vh]">
       
       <motion.div
         className="flex flex-col items-start sm:w-2/3"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
+        transition={{ duration: 0.8, delay: 0.1 }}
       >
-        <h2 className="text-2xl text-orange-50 font-semibold mb-2 mt-6">
-          Hi, my name is
+        <h2 className="text-lg text-gray-600 dark:text-gray-400 font-medium mb-3 tracking-wide">
+          Hello, I'm
         </h2>
         <motion.h1
-          className="text-5xl text-violet-700 font-bold"
-          initial={{ opacity: 0, x: -50 }}
+          className="text-6xl sm:text-7xl font-bold text-black dark:text-white mb-4"
+          initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
           Lina Villalba.
         </motion.h1>
         <motion.p
-          className="text-3xl text-orange-300 font-semibold"
-          initial={{ opacity: 0, x: -50 }}
+          className="text-2xl sm:text-3xl text-gray-700 dark:text-gray-300 font-medium mb-6"
+          initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
         >
-          A passionate developer.
+          Passionate Developer
         </motion.p>
         <motion.p
-          className="text-xl text-gray-200 text-left font-light"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.8 }}
+          className="text-base sm:text-lg text-gray-600 dark:text-gray-400 font-light leading-relaxed max-w-lg"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Focused on creating interactive and accessible interfaces that provide
-          a smooth and engaging user experience. My goal is to transform ideas
-          into high-impact web products, always prioritizing usability and
-          design.
+          I create interactive and accessible interfaces that provide smooth user experiences. 
+          My goal is to transform ideas into high-impact web products with a focus on usability 
+          and thoughtful design.
         </motion.p>
-        <Iconst />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
+          <Iconst />
+        </motion.div>
       </motion.div>
 
       
       <motion.div
-        className="flex flex-col items-center hidden sm:flex sm:w-1/3"
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: .4, x: 0 }}
-        transition={{ duration: 1, delay: 1 }}
+        className="flex flex-col items-center hidden sm:flex sm:w-1/3 opacity-40 dark:opacity-30"
+        initial={{ opacity: 0, x: 30 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
       >
         <Image
           src="/lv-logo-grey.png"
