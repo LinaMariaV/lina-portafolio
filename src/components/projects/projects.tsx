@@ -70,7 +70,7 @@ export default function Projects() {
                       src={project.image}
                       alt={`Project ${project.title}`}
                       className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                      layout="fill"
+                      fill
                       priority={index === 0}
                     />
                   )}

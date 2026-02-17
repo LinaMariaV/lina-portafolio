@@ -14,7 +14,7 @@ export default function About() {
             <Image
               src={faceimage}
               alt="Lina Villalba"
-              layout="fill"
+              fill
               style={{ objectFit: "cover" }}
             />
           </div>
