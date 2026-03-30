@@ -39,7 +39,7 @@ const projectsData = [
 
 export default function Projects() {
   return (
-    <div id="projects" className="w-full max-w-6xl mt-16 px-6 sm:px-8 py-8">
+    <div id="projects" className="w-full max-w-6xl mt-16 pl-18 pr-16 py-8">
       <Separator />
       <h2 className="text-4xl font-bold text-black dark:text-white mb-16 text-center">
         Featured Projects
@@ -49,9 +49,8 @@ export default function Projects() {
         {projectsData.map((project, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 ${
-              index % 2 === 0 ? "md:flex-row-reverse" : ""
-            }`}
+            className={`flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 ${index % 2 === 0 ? "md:flex-row-reverse" : ""
+              }`}
           >
             <div className="w-full md:w-2/5">
               <ProjectCard {...project} />
