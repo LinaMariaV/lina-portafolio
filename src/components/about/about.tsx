@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="w-full max-w-6xl px-6 sm:px-8 pb-10 pt-5 sm:pt-20"
+      className="w-full max-w-6xl pl-18 pr-16 pb-10 pt-5 sm:pt-20"
     >
       <div className="flex flex-col sm:flex-row items-start gap-8 sm:gap-12">
         <div className="w-full sm:w-1/3 flex justify-center">
