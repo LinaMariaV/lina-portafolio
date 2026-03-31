@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Separator from "../separator/separator";
 
 export default function ContactCTA() {
   const [email, setEmail] = useState("");
@@ -44,6 +45,7 @@ export default function ContactCTA() {
 
   return (
     <div className="w-full max-w-6xl pl-18 pr-16 py-20">
+      <Separator />
       <div className="rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-700 dark:from-indigo-800 dark:to-purple-900 overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 sm:p-12">
           {/* Left side - Content */}

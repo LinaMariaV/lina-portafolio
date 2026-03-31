@@ -65,7 +65,7 @@ export default function Testimonials() {
               <div className="h-full p-7 rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700/50 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-amber-400 via-orange-500 to-red-600 flex items-center justify-center text-white font-bold text-lg shadow-md ring-2 ring-white dark:ring-gray-800">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-600 via-purple-700 to-indigo-800 flex items-center justify-center text-white font-bold text-lg shadow-md ring-2 ring-white dark:ring-gray-800">
                       {initials}
                     </div>
                   </div>
@@ -76,14 +76,14 @@ export default function Testimonials() {
                     <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
                       {testimonial.role}
                     </p>
-                    <p className="text-xs font-medium text-amber-600 dark:text-amber-500 mt-0.5">
+                    <p className="text-xs font-medium text-indigo-600 dark:text-indigo-500 mt-0.5">
                       {testimonial.company}
                     </p>
                   </div>
                 </div>
 
                 <div className="relative pl-6">
-                  <div className="absolute left-0 top-0 bottom-0 w-1 rounded-l-2xl bg-gradient-to-b from-amber-400 to-orange-500"></div>
+                  <div className="absolute left-0 top-0 bottom-0 w-1 rounded-l-2xl bg-gradient-to-b from-indigo-600 to-purple-700"></div>
                   <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed italic">
                     "{testimonial.quote}"
                   </p>

@@ -6,9 +6,8 @@ import Link from "next/link";
 
 export default function Intro() {
   return (
-    <div className="w-full max-w-6xl pl-18 pr-16 pt-[12vh] sm:pt-0 pb-0 flex flex-col sm:flex-row sm:space-x-12 sm:items-center sm:justify-start min-h-[90vh] relative overflow-hidden">
-      {/* Background gradient accent */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-purple-50/30 dark:from-indigo-950/20 dark:to-purple-950/20 -z-10 w-full" />
+    <div className="w-full max-w-6xl pl-18 pr-16 pt-[12vh] sm:pt-0 pb-0 flex flex-col sm:flex-row sm:space-x-12 sm:items-center sm:justify-start mx-auto relative">
+
 
       <motion.div
         className="flex flex-col items-start sm:w-2/3 z-10"
