@@ -13,7 +13,7 @@ const navLinks: NavLink[] = [
   { href: "about", label: "About" },
   { href: "skills", label: "Skills" },
   { href: "projects", label: "Projects" },
-  { href: "mailto:linavilla1499@gmail.com", label: "Contact" },
+  { href: "#contact-cta", label: "Contact" },
 ];
 
 export default function Topbar() {
@@ -34,18 +34,18 @@ export default function Topbar() {
   };
 
   return (
-    <header className="bg-white dark:bg-black text-black dark:text-white w-full px-6 py-3 border-b border-gray-200 dark:border-gray-800 sticky top-0 z-10 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+    <header className="bg-white dark:bg-black text-black dark:text-white w-full px-6 py-3 border-b border-gray-200 dark:border-gray-800 sticky top-0 z-10 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95 z-20">
       <nav className="flex items-center justify-between max-w-6xl mx-auto">
         <div className="flex-shrink-0 opacity-80 hover:opacity-100 transition-opacity">
           <Image width={40} height={40} src={logolv} alt="Lina Villalba" />
         </div>
 
         <div className="hidden sm:flex space-x-10 items-center">
-          
+
           {navLinks.map(({ href, label }) => (
             <a
               key={href}
-              className="nav-item cursor-pointer text-gray-700 dark:text-gray-300" 
+              className="nav-item cursor-pointer text-gray-700 dark:text-gray-300"
               onClick={() => handleNavigation(href)}
             >
               {label}
@@ -86,9 +86,8 @@ export default function Topbar() {
 
       {/* Menú móvil */}
       <div
-        className={`${
-          menuOpen ? "block" : "hidden"
-        } sm:hidden w-full bg-white dark:bg-black text-gray-700 dark:text-white p-4 space-y-3 text-center transition-all ease-in-out border-t border-gray-200 dark:border-gray-800`}
+        className={`${menuOpen ? "block" : "hidden"
+          } sm:hidden w-full bg-white dark:bg-black text-gray-700 dark:text-white p-4 space-y-3 text-center transition-all ease-in-out border-t border-gray-200 dark:border-gray-800`}
       >
         {navLinks.map(({ href, label }) => (
           <a
@@ -106,7 +105,7 @@ export default function Topbar() {
           className="nav-item block text-sm font-medium py-2 px-4 rounded-full bg-black dark:bg-white text-white dark:text-black inline-block mx-auto"
           href="/CV-LINA.pdf"
           download
-          
+
           rel="noreferrer"
         >
           View CV

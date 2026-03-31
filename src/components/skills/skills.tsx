@@ -13,7 +13,7 @@ const skillsData = [
     id: 1,
     icon: <FaHtml5 className="text-black dark:text-white w-6 h-6" />,
     title: "Frontend Development",
-    items: ["JavaScript","Typescript", "HTML / CSS"],
+    items: ["JavaScript", "Typescript", "HTML / CSS"],
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const skillsData = [
     id: 4,
     icon: <FaNodeJs className="text-black dark:text-white w-6 h-6" />,
     title: "Backend Development",
-    items: ["Node.js","Java", "Express.js", "RESTful API"],
+    items: ["Node.js", "Java", "Express.js", "RESTful API"],
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ export default function Skills() {
   return (
     <div
       id="skills"
-      className="w-full max-w-6xl px-6 sm:px-8 py-20"
+      className="w-full max-w-6xl pl-18 pr-16 py-20"
     >
       <Separator />
       <h2 className="text-4xl font-bold text-black dark:text-white mb-12">
@@ -60,7 +60,7 @@ export default function Skills() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {skillsData.map(({ id, icon, title, items }) => (
-          <div 
+          <div
             key={id}
             className="p-6 rounded-lg border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-600 transition-all duration-300"
           >
