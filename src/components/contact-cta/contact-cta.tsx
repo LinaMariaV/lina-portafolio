@@ -10,7 +10,6 @@ export default function ContactCTA() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Simple validation
     if (!email || !name) {
       setError("Please fill in all fields");
       return;
@@ -21,30 +20,15 @@ export default function ContactCTA() {
       return;
     }
 
-    // Simulate form submission - replace with your actual API endpoint
-    fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, type: "consultation" }),
-    })
-      .then(res => res.json())
-      .then(data => {
-        console.log("Form submitted:", data);
-        setSubmitted(true);
-        setEmail("");
-        setName("");
-      })
-      .catch(err => {
-        console.error("Submission error:", err);
-        setError("Something went wrong. Please try again.");
-      });
+    setError("");
+    setSubmitted(true);
+    setEmail("");
+    setName("");
   };
 
   return (
-    <div className="w-full max-w-6xl pl-18 pr-16 py-20">
-      <div className="rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-700 dark:from-indigo-800 dark:to-purple-900 overflow-hidden">
+    <div id="contact-cta" className="w-full max-w-6xl pl-18 pr-16 py-20">
+      <div className="rounded-2xl bg-gradient-to-br from-violet-500 to-purple-600 dark:from-violet-600 dark:to-purple-700 overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 sm:p-12">
           {/* Left side - Content */}
           <div className="flex flex-col justify-center">

@@ -53,8 +53,8 @@ export default function Skills() {
       id="skills"
       className="w-full max-w-6xl pl-18 pr-16 py-20"
     >
-      <Separator />
-      <h2 className="text-4xl font-bold text-black dark:text-white mb-12">
+      <h2 className="text-4xl font-bold text-black dark:text-white mb-12 text-center">
+        <Separator />
         Technical Skills
       </h2>
 

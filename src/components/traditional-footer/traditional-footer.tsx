@@ -5,14 +5,14 @@ export default function TraditionalFooter() {
     <footer className="w-full bg-white dark:bg-neutral-900 mt-20 py-12 pl-18 pr-16">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
-          {/* Columna 1: Sobre mí */}
+          {/* Columna 1: About me */}
           <div>
             <h3 className="text-lg font-semibold text-black dark:text-white mb-4">
-              Sobre mí
+              About Me
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-              Freelance developer especializada en crear soluciones digitales escalables y centradas en el usuario.
+              Freelance developer specialized in creating scalable,
+              user-centered digital solutions.
             </p>
             <div className="flex gap-3">
               <a
@@ -21,8 +21,13 @@ export default function TraditionalFooter() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 496 512"
+                  className="w-8 h-8"
+                  fill="currentColor"
+                >
+                  <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
                 </svg>
               </a>
               <a
@@ -31,48 +36,90 @@ export default function TraditionalFooter() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.636c0-3.375-2-3.744-2-3.744-1.25-.344-1.75-1.795-1.75-1.795-1.75-.36-2.5-2.998-2.5-2.998-2.5-.164-5-1.67-5-4.25 0-3.02 2.46-5 5-5h3.5c2.5 0 4.5 1.98 4.5 4.5v8.75c0 2.5-2 4.5-4.5 4.5z" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  className="w-8 h-8"
+                  fill="currentColor"
+                >
+                  <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
                 </svg>
               </a>
             </div>
           </div>
 
-          {/* Columna 2: Servicios */}
+          {/* Columna 2: Services */}
           <div>
             <h3 className="text-lg font-semibold text-black dark:text-white mb-4">
-              Servicios
+              Services
             </h3>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Desarrollo Frontend</a></li>
-              <li><a href="#projects" className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Desarrollo Backend</a></li>
-              <li><a href="#projects" className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Despliegue y DevOps</a></li>
-              <li><a href="#about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Consultoría Técnica</a></li>
-              <li><a href="#projects" className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">APIs y Microservicios</a></li>
+              <li>
+                <a
+                  href="#about"
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                >
+                  Frontend Development
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                >
+                  Backend Development
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                >
+                  Deployment & DevOps
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                >
+                  Technical Consulting
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                >
+                  APIs & Microservices
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Columna 3: Tecnologías */}
+          {/* Columna 3: Technologies */}
           <div>
             <h3 className="text-lg font-semibold text-black dark:text-white mb-4">
-              Tecnologías
+              Technologies
             </h3>
             <div className="flex flex-wrap gap-2">
-              {"React,Next.js,Node.js,TypeScript,Spring Boot,Nginx,Docker,Git".split(",").map(tech => (
-                <span
-                  key={tech.trim()}
-                  className="text-xs text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded hover:bg-indigo-100 dark:hover:bg-indigo-900 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-default"
-                >
-                  {tech.trim()}
-                </span>
-              ))}
+              {"React,Next.js,Node.js,TypeScript,Spring Boot,Nginx,Docker,Git"
+                .split(",")
+                .map((tech) => (
+                  <span
+                    key={tech.trim()}
+                    className="text-xs text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded hover:bg-indigo-100 dark:hover:bg-indigo-900 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-default"
+                  >
+                    {tech.trim()}
+                  </span>
+                ))}
             </div>
           </div>
 
-          {/* Columna 4: Contacto */}
+          {/* Columna 4: Contact */}
           <div>
             <h3 className="text-lg font-semibold text-black dark:text-white mb-4">
-              Contacto
+              Contact
             </h3>
             <ul className="space-y-2">
               <li>
@@ -85,54 +132,53 @@ export default function TraditionalFooter() {
               </li>
               <li>
                 <a
-                  href="https://linavillalba.me"
+                  href="https://www.linkedin.com/in/lina-maria-villalba/"
                   className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  linavillalba.me
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://caicedolending.com/"
-                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  caicedolending.com
+                  Linkedin | Lina Villalba
                 </a>
               </li>
             </ul>
 
             <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-800">
               <h4 className="text-sm font-medium text-black dark:text-white mb-3">
-                Horario
+                Hours
               </h4>
               <p className="text-xs text-gray-600 dark:text-gray-400">
-                Lunes - Viernes<br />
+                Monday - Friday
+                <br />
                 9:00 AM - 6:00 PM
               </p>
             </div>
           </div>
-
         </div>
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              © {new Date().getFullYear()} Lina Villalba. Todos los derechos reservados.
+              © 2024 Lina Villalba. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-                Términos de servicio
+              <a
+                href="#"
+                className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+              >
+                Terms of Service
               </a>
-              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-                Política de privacidad
+              <a
+                href="#"
+                className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+              >
+                Privacy Policy
               </a>
-              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-                Política de cookies
+              <a
+                href="#"
+                className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+              >
+                Cookie Policy
               </a>
             </div>
           </div>

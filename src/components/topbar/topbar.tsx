@@ -13,7 +13,7 @@ const navLinks: NavLink[] = [
   { href: "about", label: "About" },
   { href: "skills", label: "Skills" },
   { href: "projects", label: "Projects" },
-  { href: "#contact-cta", label: "Contact" },
+  { href: "contact-cta", label: "Contact" },
 ];
 
 export default function Topbar() {
@@ -84,7 +84,7 @@ export default function Topbar() {
         </button>
       </nav>
 
-      {/* Menú móvil */}
+      {/* Mobile menu */}
       <div
         className={`${menuOpen ? "block" : "hidden"
           } sm:hidden w-full bg-white dark:bg-black text-gray-700 dark:text-white p-4 space-y-3 text-center transition-all ease-in-out border-t border-gray-200 dark:border-gray-800`}

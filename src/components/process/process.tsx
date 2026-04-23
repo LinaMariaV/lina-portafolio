@@ -41,21 +41,21 @@ export default function Process() {
       id="process"
       className="w-full max-w-6xl pl-18 pr-16 py-20"
     >
-      <Separator />
       <div className="text-center mb-16">
+        <Separator />
         <h2 className="text-4xl font-bold text-black dark:text-white mb-4">
-          My Process
+          Our Process
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          A structured approach to delivering exceptional digital experiences
+          A collaborative approach to bringing your vision to life
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
         {steps.map((step, index) => (
           <motion.div
             key={step.number}
-            className="relative p-6 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 hover:border-indigo-500 dark:hover:border-indigo-400 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+            className="relative p-5 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 hover:border-indigo-500 dark:hover:border-indigo-400 transition-all duration-300 hover:shadow-lg"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -66,7 +66,7 @@ export default function Process() {
             }}
           >
             <motion.div
-              className="absolute -top-4 -right-4 w-10 h-10 rounded-full bg-indigo-600 dark:bg-indigo-500 flex items-center justify-center font-bold text-white text-lg"
+              className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-indigo-600 dark:bg-indigo-500 flex items-center justify-center font-bold text-white text-sm"
               initial={{ scale: 0, rotate: -180 }}
               whileInView={{ scale: 1, rotate: 0 }}
               viewport={{ once: true }}
@@ -79,66 +79,55 @@ export default function Process() {
               {step.number}
             </motion.div>
 
-            <div className="relative z-10">
-              <h3 className="text-xl font-semibold text-black dark:text-white mb-3">
+            <div className="relative z-10 pt-2">
+              <h3 className="text-lg font-semibold text-black dark:text-white mb-2">
                 {step.title}
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
                 {step.description}
               </p>
             </div>
 
-            {/* Animated connector line */}
+            {/* Arrow connector */}
             {index < steps.length - 1 && (
-              <motion.div
-                className="hidden lg:block absolute left-1/2 -bottom-3 w-full"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 + 0.5 }}
-              >
-                <svg className="w-full h-6">
-                  <path
-                    d="M0 10 L50 10"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeDasharray="4 4"
-                    className="text-gray-300 dark:text-gray-600"
-                  />
-                  <circle
-                    cx="50"
-                    cy="10"
-                    r="4"
-                    className="fill-gray-300 dark:fill-gray-600"
-                  />
-                </svg>
-              </motion.div>
+              <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                <motion.div
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 + 0.4 }}
+                >
+                  <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </motion.div>
+              </div>
             )}
           </motion.div>
         ))}
       </div>
 
-      {/* Center connector for mobile */}
-      <div className="lg:hidden mt-12">
+      {/* Mobile arrows */}
+      <div className="md:hidden mt-2 flex justify-center">
         <motion.div
-          className="flex justify-center items-center gap-2 py-4"
+          className="flex flex-col gap-1"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          {steps.map((_, index) => (
+          {steps.slice(0, -1).map((_, index) => (
             <motion.div
               key={index}
-              className="w-4 h-4 rounded-full bg-indigo-600 dark:bg-indigo-500"
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
+              className="flex justify-center"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{
-                delay: index * 0.15,
-                type: "spring",
-                stiffness: 300
-              }}
-            />
+              transition={{ delay: index * 0.15 + 0.3 }}
+            >
+              <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </motion.div>
           ))}
         </motion.div>
       </div>

@@ -2,13 +2,14 @@ import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import Iconst from "@/utils/Icons-tecnology";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Intro() {
   return (
-    <div className="w-full max-w-6xl pl-18 pr-16 pt-[12vh] sm:pt-0 pb-0 flex flex-col sm:flex-row sm:space-x-12 sm:items-center sm:justify-start min-h-[90vh] relative overflow-hidden">
+    <div className="w-full pl-18 pr-16 pt-[12vh] sm:pt-20 pb-20 flex flex-col sm:flex-row sm:space-x-12 sm:items-center sm:justify-start min-h-screen relative">
       {/* Background gradient accent */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-purple-50/30 dark:from-indigo-950/20 dark:to-purple-950/20 -z-10 w-full" />
+      <div className="fixed inset-0 bg-gradient-to-br from-indigo-50/50 to-purple-50/30 dark:from-indigo-950/20 dark:to-purple-950/20 -z-10" />
+
+      <div className="max-w-6xl flex flex-col sm:flex-row sm:space-x-12 sm:items-center sm:justify-start w-full">
 
       <motion.div
         className="flex flex-col items-start sm:w-2/3 z-10"
@@ -52,19 +53,19 @@ export default function Intro() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <Link
-            href="#contact-cta"
-            className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-semibold rounded-lg transition-all duration-200 flex items-center gap-2 group"
+          <button
+            onClick={() => document.getElementById('contact-cta')?.scrollIntoView({ behavior: 'smooth' })}
+            className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-semibold rounded-lg transition-all duration-200 flex items-center gap-2 group cursor-pointer"
           >
             Let&#39;s Build Something Together
             <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-          </Link>
-          <Link
-            href="#projects"
-            className="px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-lg hover:border-indigo-500 hover:text-indigo-600 dark:hover:border-indigo-400 dark:hover:text-indigo-400 transition-all duration-200"
+          </button>
+          <button
+            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            className="px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-lg hover:border-indigo-500 hover:text-indigo-600 dark:hover:border-indigo-400 dark:hover:text-indigo-400 transition-all duration-200 cursor-pointer"
           >
             View My Work
-          </Link>
+          </button>
         </motion.div>
 
         <motion.div
@@ -91,6 +92,7 @@ export default function Intro() {
           priority
         />
       </motion.div>
+      </div>
     </div>
   );
 }
