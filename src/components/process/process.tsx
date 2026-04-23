@@ -11,28 +11,28 @@ const steps: ProcessStep[] = [
   {
     number: 1,
     title: "Discovery",
-    description: "Understanding your goals, requirements, and vision for the project",
+    description: "Understanding your goals, requirements, and vision for the project"
   },
   {
     number: 2,
     title: "Planning",
-    description: "Architecting scalable solutions with modern technologies",
+    description: "Architecting scalable solutions with modern technologies"
   },
   {
     number: 3,
     title: "Development",
-    description: "Building clean, maintainable code with best practices",
+    description: "Building clean, maintainable code with best practices"
   },
   {
     number: 4,
     title: "Testing",
-    description: "Ensuring quality, performance, and responsiveness",
+    description: "Ensuring quality, performance, and responsiveness"
   },
   {
     number: 5,
     title: "Launch",
-    description: "Deploying to production with ongoing support",
-  },
+    description: "Deploying to production with ongoing support"
+  }
 ];
 
 export default function Process() {

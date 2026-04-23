@@ -39,11 +39,11 @@ export default function ContactCTA() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              Let's Work Together
+              Let&apos;s Work Together
             </motion.h2>
 
             <motion.p
-              className="text-lg text-indigo-100 mb-2"
+              className="text-lg text-violet-100 mb-2"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -53,7 +53,7 @@ export default function ContactCTA() {
             </motion.p>
 
             <motion.p
-              className="text-indigo-200 mb-8"
+              className="text-violet-200 mb-8"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -70,19 +70,19 @@ export default function ContactCTA() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <div className="flex items-start gap-3 text-indigo-100">
+              <div className="flex items-start gap-3 text-violet-100">
                 <svg className="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span>Free 30-minute tech consultation</span>
               </div>
-              <div className="flex items-start gap-3 text-indigo-100">
+              <div className="flex items-start gap-3 text-violet-100">
                 <svg className="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span>Expert technical guidance</span>
               </div>
-              <div className="flex items-start gap-3 text-indigo-100">
+              <div className="flex items-start gap-3 text-violet-100">
                 <svg className="w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
@@ -108,11 +108,11 @@ export default function ContactCTA() {
                   Request Received!
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  I'll get in touch with you within 24 hours to schedule your consultation.
+                  Thank you for your interest! I&apos;m currently working on this feature. I&apos;ll reach out to you soon.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="mt-6 text-indigo-600 dark:text-indigo-400 hover:underline"
+                  className="mt-6 text-violet-600 dark:text-violet-400 hover:underline"
                 >
                   Send another request
                 </button>
@@ -138,7 +138,7 @@ export default function ContactCTA() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="John Doe"
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-all"
                   />
                 </div>
 
@@ -155,13 +155,13 @@ export default function ContactCTA() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="john@example.com"
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-all"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-semibold rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  className="w-full py-3 px-4 bg-violet-600 hover:bg-violet-700 dark:bg-violet-500 dark:hover:bg-violet-600 text-white font-semibold rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />

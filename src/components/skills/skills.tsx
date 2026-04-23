@@ -6,6 +6,7 @@ import {
   FaDatabase,
   FaServer,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 import Separator from "../separator/separator";
 
 const skillsData = [
@@ -49,14 +50,13 @@ const skillsData = [
 
 export default function Skills() {
   return (
-    <div
-      id="skills"
-      className="w-full max-w-6xl pl-18 pr-16 py-20"
-    >
-      <h2 className="text-4xl font-bold text-black dark:text-white mb-12 text-center">
+    <div id="skills" className="w-full max-w-6xl pl-18 pr-16 py-20">
+      <div className="text-center mb-12">
         <Separator />
-        Technical Skills
-      </h2>
+        <h2 className="text-4xl font-bold text-black dark:text-white mt-4">
+          Technical Skills
+        </h2>
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {skillsData.map(({ id, icon, title, items }) => (
@@ -68,9 +68,11 @@ export default function Skills() {
               {icon}
               <h3 className="text-lg font-semibold text-black dark:text-white">{title}</h3>
             </div>
-            <ul className="text-gray-600 dark:text-gray-400 space-y-1">
-              {items.map((item, index) => (
-                <li key={index} className="text-sm">{item}</li>
+            <ul className="space-y-2">
+              {items.map((item, idx) => (
+                <li key={idx} className="text-sm text-gray-600 dark:text-gray-400">
+                  {item}
+                </li>
               ))}
             </ul>
           </div>
