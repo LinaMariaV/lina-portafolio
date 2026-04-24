@@ -5,7 +5,18 @@ import Projectimage2 from "../../../public/project-2.png";
 
 import Projectimage3 from "../../../public/project-3.png";
 import Projectimage4 from "../../../public/project-port.png";
+import Projectimage1 from "../../../public/project-1.png";
+
 const projectsData = [
+  {
+    title: "Brandon Townes",
+    description:
+      "New home community in Greenville, SC. Modern townhomes with premium finishes, set along a private creekside in Greenville's most desirable neighborhood.",
+    link: "https://brandontownesgvl.com/",
+    technologies: ["React", "Next.js", "Framer Motion"],
+    isExternalLink: true,
+    image: Projectimage1,
+  },
   {
     title: "Foundation Website",
     description:
