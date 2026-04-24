@@ -1,10 +1,18 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const lightColor = "rgba(0, 0, 0, 0.03)";
 const gradientSize = 200;
 
 export default function BackgroundEffect() {
+  const [isMounted, setIsMounted] = useState(false);
+
   useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+    
     const playpen = document.getElementById("root");
     if (!playpen) return;
 
@@ -32,6 +40,12 @@ export default function BackgroundEffect() {
 
     playpen.addEventListener("mousemove", handleMouseMovePlaypen);
     playpen.addEventListener("mouseleave", handleMouseLeavePlaypen);
-  }, []);
+
+    return () => {
+      playpen.removeEventListener("mousemove", handleMouseMovePlaypen);
+      playpen.removeEventListener("mouseleave", handleMouseLeavePlaypen);
+      playpen.style.background = originalBGplaypen;
+    };
+  }, [isMounted]);
   return null;
 }
