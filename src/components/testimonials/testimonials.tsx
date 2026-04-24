@@ -85,7 +85,7 @@ export default function Testimonials() {
                 <div className="relative pl-6">
                   <div className="absolute left-0 top-0 bottom-0 w-1 rounded-l-2xl bg-gradient-to-b from-violet-400 to-purple-500"></div>
                   <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed italic">
-                    "{testimonial.quote}"
+                    &#34;{testimonial.quote}&#34;
                   </p>
                 </div>
               </div>
