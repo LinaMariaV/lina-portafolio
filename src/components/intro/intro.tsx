@@ -42,7 +42,7 @@ export default function Intro() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             Passionate about building <span className="font-semibold text-black dark:text-white">scalable digital solutions</span> that solve real problems.
-            With <span className="font-semibold text-black dark:text-white">5+ years of experience</span>, I transform ideas into high-impact web products,
+            With <span className="font-semibold text-black dark:text-white">3+ years of experience</span>, I transform ideas into high-impact web products,
             focusing on clean code, performance, and user-centric design.
           </motion.p>
 
