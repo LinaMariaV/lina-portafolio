@@ -11,36 +11,34 @@ const steps: ProcessStep[] = [
   {
     number: 1,
     title: "Discovery",
-    description: "Understanding your goals, requirements, and vision for the project"
+    description:
+      "Understanding your goals, requirements, and vision for the project",
   },
   {
     number: 2,
     title: "Planning",
-    description: "Architecting scalable solutions with modern technologies"
+    description: "Architecting scalable solutions with modern technologies",
   },
   {
     number: 3,
     title: "Development",
-    description: "Building clean, maintainable code with best practices"
+    description: "Building clean, maintainable code with best practices",
   },
   {
     number: 4,
     title: "Testing",
-    description: "Ensuring quality, performance, and responsiveness"
+    description: "Ensuring quality, performance, and responsiveness",
   },
   {
     number: 5,
     title: "Launch",
-    description: "Deploying to production with ongoing support"
-  }
+    description: "Deploying to production with ongoing support",
+  },
 ];
 
 export default function Process() {
   return (
-    <div
-      id="process"
-      className="w-full max-w-6xl pl-18 pr-16 py-20"
-    >
+    <div id="process" className="w-full max-w-6xl pl-18 pr-16 py-20">
       <div className="text-center mb-16">
         <Separator />
         <h2 className="text-4xl font-bold text-black dark:text-white mb-4">
@@ -62,7 +60,7 @@ export default function Process() {
             transition={{
               duration: 0.5,
               delay: index * 0.1,
-              ease: "easeOut"
+              ease: "easeOut",
             }}
           >
             <motion.div
@@ -73,7 +71,7 @@ export default function Process() {
               transition={{
                 duration: 0.5,
                 delay: index * 0.1 + 0.2,
-                ease: "easeOut"
+                ease: "easeOut",
               }}
             >
               {step.number}
@@ -97,8 +95,18 @@ export default function Process() {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 + 0.4 }}
                 >
-                  <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  <svg
+                    className="w-6 h-6 text-indigo-600 dark:text-indigo-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
                   </svg>
                 </motion.div>
               </div>
@@ -123,11 +131,7 @@ export default function Process() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 + 0.3 }}
-            >
-              <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </motion.div>
+            ></motion.div>
           ))}
         </motion.div>
       </div>
